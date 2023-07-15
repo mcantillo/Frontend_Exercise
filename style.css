@@ -8,7 +8,7 @@ body {
 
 }
 
-@media screen and (min-width: 375px) {
+@media (min-width: 375px) {
     body {
         display: flex;
         flex-direction: column;
@@ -20,16 +20,65 @@ body {
 
 }
 
-@media screen and(mix-width: 1440px) {
+@media (min-width: 1440px) {
     body {
         display: grid;
+        padding: 10px;
         grid-template-columns: repeat(4, 1fr);
         grid: gap 10px;
-        grid-auto-rows: minmax(4px, auto);
         grid-template-areas:
             "area1 area1 area2 area3 "
             "area4 area5 area5 area3 ";
     }
+
+    .card__1 {
+        grid-area: area1;
+        border: 1px;
+        border-radius: 10px;
+        background-color: hsl(263, 55%, 52%);
+        padding: 1rem;
+        box-sizing: border-box;
+        
+    }
+
+    .card__2 {
+       grid-area: area2;
+        border: 1px;
+        border-radius: 10px;
+        padding: 1rem;
+        background-color: hsl(217, 19%, 35%);
+        justify-content: center;
+    }
+
+    .card__3 {
+        grid-area: area4;
+        border: 1px;
+        border-radius: 10px;
+        padding: 1rem;
+        background-color: hsl(0, 0%, 100%);
+        justify-content: center;
+    }
+    
+    .card__4 {
+        grid-area: area5;
+        border: 1px;
+        border-radius: 10px;
+        padding: 1rem;
+        background-color: hsl(219, 29%, 14%);
+        color: hsl(210, 46%, 95%);
+        justify-content: center;
+    }
+    
+    .card__5 {
+        grid-area: area3;
+        border: 1px;
+        padding: 1rem;
+        border-radius: 10px;
+        background-color: hsl(0, 0%, 100%);
+        justify-content: center;
+    }
+    
+
 }
 
 .card__1 {
@@ -126,11 +175,3 @@ body {
     font-weight: bold;
 }
 
-.attribution {
-    font-size: 11px;
-    text-align: center;
-}
-
-.attribution a {
-    color: hsl(228, 45%, 44%);
-}
