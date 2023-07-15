@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed');
+
+.body {
+     font-family: 'Barlow Semi Condensed', sans-serif;
+     font-size: 13px;
+     background-color: hsl(0, 0%, 81%);
+     margin: 2px;
+
+ }
+
+ @media screen and (min-width: 375px) {
+     body {
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+         gap: 30px;
+         align-items: center;
+     }
+
+
+ }
+
+ @media screen and(max-width: 1440px) {
+     body {
+         display: grid;
+         }
+ }
+
+ .card__1 {
+     width: 300px;
+     border: 1px;
+     border-radius: 10px;
+     background-color: hsl(263, 55%, 52%);
+     padding: 1rem;
+     box-sizing: border-box;
+     justify-content: center;
+     
+ }
+
+ .card__2 {
+     width: 300px;
+     border: 1px;
+     border-radius: 10px;
+     padding: 1rem;
+     background-color: hsl(217, 19%, 35%);
+     justify-content: center;
+ }
+
+ .card__3 {
+     width: 300px;
+     border: 1px;
+     border-radius: 10px;
+     padding: 1rem;
+     background-color: hsl(0, 0%, 100%);
+     justify-content: center;
+ }
+
+ .card__4 {
+     width: 300px;
+     border: 1px;
+     border-radius: 10px;
+     padding: 1rem;
+     background-color: hsl(219, 29%, 14%);
+     color: hsl(210, 46%, 95%);
+     justify-content: center;
+ }
+
+ .card__5 {
+     width: 300px;
+     border: 1px;
+     padding: 1rem;
+     border-radius: 10px;
+     background-color: hsl(0, 0%, 100%);
+     justify-content: center;
+ }
+
+ .card__header {
+     display: grid;
+     text-shadow: 50%;
+     grid-template-columns: repeat(4, 1fr);
+     grid-gap:0cap;
+     grid-auto-rows: minmax(3px, auto);
+     grid-template-areas:
+     "area1 area2 . "
+     "area1  area3 area3 ";
+     
+ }
+
+ .card__image {
+     grid-column: 1;
+     grid-row: 1;
+     border-radius: 50%;
+     grid-area: area1;
+     align-content: center;
+     border:3px solid grey;
+
+ }
+
+ .card__name {
+     font-family: 'Barlow Condensed', sans-serif;
+     font-weight: bold;
+     grid-area: area2;
+     display: inline-block;
+     text-align: left;
+     display: inline-block;
+     
+     
+ }
+
+ .card__title {
+     opacity: .5;
+     grid-area: area3;
+     text-align: left;
+     
+ }
+
+ .card__body--featured {
+     font-weight: bold;
+     font-size: 20px;
+     padding: 0.5rem;
+
+ }
+
+ .card__body--regular {
+     font-weight: 600PX;
+     opacity: .7;
+     padding: 0.5rem;
+     
+ }
+
+ .attribution {
+     font-size: 11px;
+     text-align: center;
+ }
+
+ .attribution a {
+     color: hsl(228, 45%, 44%);
+ }
